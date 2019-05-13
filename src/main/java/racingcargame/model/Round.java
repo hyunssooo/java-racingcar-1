@@ -4,7 +4,7 @@ import java.util.List;
 
 class Round {
 
-    private static final int makeInt = 10;
+    private static final int MAKE_INT = 10;
 
     List<Car> round(List<Car> cars) {
         cars.forEach(car -> car.move(getRandomNo()));
@@ -12,6 +12,6 @@ class Round {
     }
 
     private int getRandomNo() {
-        return (int) (Math.random() * makeInt);
+        return (int) (Math.random() * MAKE_INT);
     }
 }
